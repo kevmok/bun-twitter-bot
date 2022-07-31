@@ -1,8 +1,14 @@
 {
   "name": "bun-twitter-bot",
   "version": "0.0.3",
-  "module": "src/index.js",
+  "module": "src/index.ts",
+  "scripts": {
+    "start": "bun src/index.ts"
+  },
   "devDependencies": {
     "bun-types": "latest"
+  },
+  "dependencies": {
+    "oauth-1.0a": "^2.2.6"
   }
 }
