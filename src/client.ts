@@ -84,7 +84,7 @@ export default class Client {
         }
     }
 
-    async unfollowUserbyId(handleId: string, user: user) {
+    async unfollowUserbyId(handleId: string, user: user): Promise<string> {
         const url = `https://api.twitter.com/2/users/${handleId.toString()}/following/${user.id.toString()}`;
 
         try {
